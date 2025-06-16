@@ -687,7 +687,7 @@ msgstr "Items in progress"
 
 #: inc/process.class.php:551
 msgid "Allow killing processes"
-msgstr "Allow killing processes"
+msgstr "Allow process killing"
 
 #: inc/process.class.php:560
 msgid ""
