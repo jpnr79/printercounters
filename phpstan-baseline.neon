@@ -1,0 +1,1501 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/infocom.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:cleanCSRFTokens\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/search.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:getNewCSRFToken\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/search.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getActionsFor\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/searchoption.php
+
+		-
+			message: '#^Function isPluginItemType not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: ajax/searchoptionvalue.php
+
+		-
+			message: '#^Path in include\(\) "\.\./\.\./\.\.inc/includes\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: ajax/searchoptionvalue.php
+
+		-
+			message: '#^Call to static method Register\(\) on an unknown class CronTask\.$#'
+			identifier: class.notFound
+			count: 2
+			path: hook.php
+
+		-
+			message: '#^Call to static method Unregister\(\) on an unknown class CronTask\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Access to undefined constant Alert\:\:THRESHOLD\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: inc/additional_data.class.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:getTimestampTimeUnits\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/additional_data.class.php
+
+		-
+			message: '#^Class PluginPrintercountersException constructor invoked with 1 parameter, 5 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: inc/additional_data.class.php
+
+		-
+			message: '#^Access to an undefined property PluginPrintercountersBillingmodel\:\:\$updates\.$#'
+			identifier: property.notFound
+			count: 2
+			path: inc/billingmodel.class.php
+
+		-
+			message: '#^Class PluginPrintercountersException constructor invoked with 1 parameter, 5 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: inc/billingmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersBillingmodel\:\:post_getEmpty\(\) should return nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/billingmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersBillingmodel\:\:setSessionValues\(\) should return type but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/billingmodel.class.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 2
+			path: inc/budget.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/budget.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 12
+			path: inc/budget.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getCleanedOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/budget.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/budget.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:giveItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/budget.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/budget.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 24
+			path: inc/budget.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/budget.class.php
+
+		-
+			message: '#^Class Search referenced with incorrect case\: search\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: inc/budget.class.php
+
+		-
+			message: '#^Method PluginPrintercountersBudget\:\:isInPeriod\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: inc/budget.class.php
+
+		-
+			message: '#^Method PluginPrintercountersBudget\:\:post_getEmpty\(\) should return nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/budget.class.php
+
+		-
+			message: '#^Method PluginPrintercountersBudget\:\:setSessionValues\(\) should return type but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/budget.class.php
+
+		-
+			message: '#^Class PluginPrintercountersException constructor invoked with 1 parameter, 5 required\.$#'
+			identifier: arguments.count
+			count: 2
+			path: inc/commonsnmpobject.class.php
+
+		-
+			message: '#^Method PluginPrintercountersCommonSNMPObject\:\:closeSNMPSession\(\) should return int but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/commonsnmpobject.class.php
+
+		-
+			message: '#^Method PluginPrintercountersCountertype\:\:post_getEmpty\(\) should return nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/countertype.class.php
+
+		-
+			message: '#^Method PluginPrintercountersCountertype\:\:setSessionValues\(\) should return type but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/countertype.class.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:cleanInteger\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: inc/countertype_recordmodel.class.php
+
+		-
+			message: '#^Class Html referenced with incorrect case\: html\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: inc/countertype_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersCountertype_Recordmodel\:\:checkCounterOidUpdate\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: inc/countertype_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersCountertype_Recordmodel\:\:getOidType\(\) should return an but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/countertype_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/countertype_recordmodelinjection.class.php
+
+		-
+			message: '#^Call to static method addToSearchOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/countertype_recordmodelinjection.class.php
+
+		-
+			message: '#^Call to static method getBlacklistedOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/countertype_recordmodelinjection.class.php
+
+		-
+			message: '#^Instantiated class PluginDatainjectionCommonInjectionLib not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/countertype_recordmodelinjection.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/countertypeinjection.class.php
+
+		-
+			message: '#^Call to static method addToSearchOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/countertypeinjection.class.php
+
+		-
+			message: '#^Call to static method getBlacklistedOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/countertypeinjection.class.php
+
+		-
+			message: '#^Instantiated class PluginDatainjectionCommonInjectionLib not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/countertypeinjection.class.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/erroritem.class.php
+
+		-
+			message: '#^Class PluginPrintercountersException constructor invoked with 1 parameter, 5 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: inc/erroritem.class.php
+
+		-
+			message: '#^Instantiated class Printer not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/erroritem.class.php
+
+		-
+			message: '#^Access to undefined constant Session\:\:DEBUG_MODE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: inc/exception.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printAjaxPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_billingmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getCleanedOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/item_billingmodel.class.php
+
+		-
+			message: '#^Class Html referenced with incorrect case\: html\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: inc/item_billingmodel.class.php
+
+		-
+			message: '#^Class PluginPrintercountersException constructor invoked with 1 parameter, 5 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: inc/item_billingmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Billingmodel\:\:getFieldName\(\) should return type but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_billingmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Billingmodel\:\:massiveActions\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: inc/item_billingmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Billingmodel\:\:showForBillingmodel\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_billingmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Billingmodel\:\:showForItem\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: inc/item_billingmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Billingmodel\:\:showMassiveActionsSubForm\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: inc/item_billingmodel.class.php
+
+		-
+			message: '#^Static call to instance method CommonDBTM\:\:showMassiveActionsSubForm\(\)\.$#'
+			identifier: method.staticCall
+			count: 1
+			path: inc/item_billingmodel.class.php
+
+		-
+			message: '#^Access to an undefined static property PluginPrintercountersItem_Recordmodel\:\:\$PROGRESS_STATE\.$#'
+			identifier: staticProperty.notFound
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showTimeStamp\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:changeProgressBarPosition\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printAjaxPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getCleanedOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:giveItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to static method history\(\) on an unknown class Log\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Class Html referenced with incorrect case\: html\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Class PluginPrintercountersException constructor invoked with 1 parameter, 5 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Function getForeignKeyFieldForItemType not found\.$#'
+			identifier: function.notFound
+			count: 2
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Recordmodel\:\:addLeftJoin\(\) should return type but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Recordmodel\:\:addLog\(\) should return nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Recordmodel\:\:addRestriction\(\) should return an but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Recordmodel\:\:doMassiveActionProcess\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Recordmodel\:\:getFieldName\(\) should return type but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Recordmodel\:\:massiveActions\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Recordmodel\:\:showForItem\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Recordmodel\:\:showForRecordmodel\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Recordmodel\:\:showMassiveActionsSubForm\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Recordmodel\:\:showRecordPlanning\(\) should return an but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Static call to instance method CommonDBTM\:\:showMassiveActionsSubForm\(\)\.$#'
+			identifier: method.staticCall
+			count: 1
+			path: inc/item_recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_recordmodelinjection.class.php
+
+		-
+			message: '#^Call to static method addToSearchOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/item_recordmodelinjection.class.php
+
+		-
+			message: '#^Call to static method getBlacklistedOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/item_recordmodelinjection.class.php
+
+		-
+			message: '#^Instantiated class PluginDatainjectionCommonInjectionLib not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/item_recordmodelinjection.class.php
+
+		-
+			message: '#^Access to undefined constant Ticket\:\:CLOSED\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Access to undefined constant Ticket\:\:SOLVED\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showTimeStamp\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printAjaxPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:addslashes_deep\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Call to static method dropdown\(\) on an unknown class ITILCategory\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Class PluginPrintercountersException constructor invoked with 1 parameter, 5 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Ticket\:\:createTicket\(\) should return type but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Method PluginPrintercountersItem_Ticket\:\:showTickets\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/item_ticket.class.php
+
+		-
+			message: '#^Access to an undefined property PluginPrintercountersNotificationTargetAdditional_Data\:\:\$data\.$#'
+			identifier: property.notFound
+			count: 1
+			path: inc/notificationtargetadditional_data.class.php
+
+		-
+			message: '#^Access to an undefined property PluginPrintercountersNotificationTargetAdditional_Data\:\:\$tag_descriptions\.$#'
+			identifier: property.notFound
+			count: 3
+			path: inc/notificationtargetadditional_data.class.php
+
+		-
+			message: '#^Call to an undefined method PluginPrintercountersNotificationTargetAdditional_Data\:\:addTagToList\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: inc/notificationtargetadditional_data.class.php
+
+		-
+			message: '#^Call to an undefined method PluginPrintercountersNotificationTargetAdditional_Data\:\:getAllEvents\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: inc/notificationtargetadditional_data.class.php
+
+		-
+			message: '#^Instantiated class Notification_NotificationTemplate not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: inc/notificationtargetadditional_data.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/pagecost.class.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:cleanInteger\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/pagecost.class.php
+
+		-
+			message: '#^Class Html referenced with incorrect case\: html\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: inc/pagecost.class.php
+
+		-
+			message: '#^Class PluginPrintercountersException constructor invoked with 1 parameter, 5 required\.$#'
+			identifier: arguments.count
+			count: 2
+			path: inc/process.class.php
+
+		-
+			message: '#^Method PluginPrintercountersProcess\:\:cleanup\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: inc/process.class.php
+
+		-
+			message: '#^Method PluginPrintercountersProcess\:\:showProcesses\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/process.class.php
+
+		-
+			message: '#^Access to an undefined static property PluginPrintercountersProfile\:\:\$rightname\.$#'
+			identifier: staticProperty.notFound
+			count: 1
+			path: inc/profile.class.php
+
+		-
+			message: '#^Call to an undefined method PluginPrintercountersProfile\:\:showLegend\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: inc/profile.class.php
+
+		-
+			message: '#^Method PluginPrintercountersProfile\:\:showForm\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/profile.class.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:LBBR\.$#'
+			identifier: classConstant.notFound
+			count: 4
+			path: inc/record.class.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:LBHR\.$#'
+			identifier: classConstant.notFound
+			count: 3
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:changeProgressBarPosition\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:requireJs\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateTimeField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getCleanedOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:giveItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 13
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/record.class.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:cleanInteger\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: inc/record.class.php
+
+		-
+			message: '#^Class PluginPrintercountersException constructor invoked with 1 parameter, 5 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Class Search referenced with incorrect case\: search\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Instantiated class PrinterModel not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Method PluginPrintercountersRecord\:\:getFieldName\(\) should return type but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Method PluginPrintercountersRecord\:\:showActions\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/record.class.php
+
+		-
+			message: '#^Class PluginPrintercountersException constructor invoked with 1 parameter, 5 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: inc/recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersRecordmodel\:\:massiveActions\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersRecordmodel\:\:post_getEmpty\(\) should return nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/recordmodel.class.php
+
+		-
+			message: '#^Method PluginPrintercountersRecordmodel\:\:setSessionValues\(\) should return type but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/recordmodel.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/recordmodelinjection.class.php
+
+		-
+			message: '#^Call to static method addToSearchOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/recordmodelinjection.class.php
+
+		-
+			message: '#^Call to static method getBlacklistedOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/recordmodelinjection.class.php
+
+		-
+			message: '#^Instantiated class PluginDatainjectionCommonInjectionLib not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/recordmodelinjection.class.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 5
+			path: inc/search.class.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:NULLVALUE\.$#'
+			identifier: classConstant.notFound
+			count: 6
+			path: inc/search.class.php
+
+		-
+			message: '#^Access to undefined constant User\:\:FIRSTNAME_BEFORE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method CommonITILValidation\:\:getAllValidationStatusArray\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method CommonITILValidation\:\:getCanValidationStatusArray\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showListLimit\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:computeGenericDateTimeSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:requireJs\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addDefaultJoin\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:computeComplexJoinID\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 12
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:explodeWithID\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 12
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:giveItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:makeTextCriteria\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 7
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:makeTextSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:haveTranslations\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: inc/search.class.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:substr\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Class Search referenced with incorrect case\: search\.$#'
+			identifier: class.nameCase
+			count: 6
+			path: inc/search.class.php
+
+		-
+			message: '#^Function isPluginItemType not found\.$#'
+			identifier: function.notFound
+			count: 4
+			path: inc/search.class.php
+
+		-
+			message: '#^Instantiated class GLPIKey not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Method PluginPrintercountersSearch\:\:addLeftJoin\(\) should return Left but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Method PluginPrintercountersSearch\:\:addSelect\(\) should return select but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Method PluginPrintercountersSearch\:\:printPagerForm\(\) should return nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Method PluginPrintercountersSearch\:\:showHistory\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/search.class.php
+
+		-
+			message: '#^Method PluginPrintercountersSnmpauthentication\:\:post_getEmpty\(\) should return nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/snmpauthentication.class.php
+
+		-
+			message: '#^Method PluginPrintercountersSnmpauthentication\:\:setDefaultAuthentication\(\) should return type but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: inc/snmpauthentication.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:cleanPostForTextArea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/snmpset.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/snmpset.class.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:substr\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/snmpset.class.php
+
+		-
+			message: '#^Class Html referenced with incorrect case\: html\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: inc/snmpset.class.php
+
+		-
+			message: '#^Method PluginPrintercountersSnmpset\:\:showSnmpSet\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/snmpset.class.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:cleanInteger\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/sysdescr.class.php
+
+		-
+			message: '#^Class Html referenced with incorrect case\: html\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: inc/sysdescr.class.php
+
+		-
+			message: '#^Method PluginPrintercountersSysdescr\:\:showForRecordmodel\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/sysdescr.class.php
+
+		-
+			message: '#^Array has 2 duplicate keys with value ''ý'' \(''ý'', ''ý''\)\.$#'
+			identifier: array.duplicateKey
+			count: 1
+			path: inc/toolbox.class.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 5
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 11
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Instantiated class PluginReportsDateIntervalCriteria not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Instantiated class PluginReportsDropdownCriteria not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/printercountersreport/printercountersreport.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 5
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 8
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:cleanInteger\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/printercountersreport2/printercountersreport2.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 5
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 7
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 5
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Instantiated class PluginReportsDateIntervalCriteria not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/printercountersreport3/printercountersreport3.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 5
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 10
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Instantiated class PluginReportsDateIntervalCriteria not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/printercountersreport4/printercountersreport4.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 6
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 8
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Instantiated class PluginReportsDateIntervalCriteria not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Instantiated class PluginReportsDropdownCriteria not found\.$#'
+			identifier: class.notFound
+			count: 4
+			path: report/printercountersreport5/printercountersreport5.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:getMemoryLimit\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: scripts/clean_records.php
+
+		-
+			message: '#^Path in include\(\) "\.\./\.\./\.\./config/based_config\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: scripts/glpienv.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:getMemoryLimit\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: scripts/printercounters_fullsync.php
