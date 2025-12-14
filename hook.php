@@ -28,70 +28,8 @@
  */
 
 function plugin_printercounters_install() {
-   global $DB;
-
-   include_once (PLUGIN_PRINTERCOUNTERS_DIR. "/inc/profile.class.php");
-
-   // All schema changes are now handled by migration files in sql/
-
-   // Update 100 to 101
-   if ($DB->tableExists("glpi_plugin_printercounters_billingmodels")
-         && !$DB->fieldExists('glpi_plugin_printercounters_billingmodels', 'budgets_id')) {
-      include(PLUGIN_PRINTERCOUNTERS_DIR. "/install/update_100_101.php");
-      update100to101();
-   }
-
-   // Update 101 to 102
-   if ($DB->tableExists("glpi_plugin_printercounters_configs")
-         && !$DB->fieldExists('glpi_plugin_printercounters_configs', 'set_first_record')) {
-      include(PLUGIN_PRINTERCOUNTERS_DIR. "/install/update_101_102.php");
-      update101to102();
-   }
-
-   // Update 102 to 103
-   $dbu = new DbUtils();
-   if ($DB->tableExists("glpi_plugin_printercounters_records")
-         && !$dbu->isIndex('glpi_plugin_printercounters_records', 'date')) {
-      include(PLUGIN_PRINTERCOUNTERS_DIR."/install/update_102_103.php");
-      update102to103();
-   }
-
-   // Update 103 to 104
-   if ($DB->tableExists("glpi_plugin_printercounters_snmpauthentications")
-         && !$DB->fieldExists('glpi_plugin_printercounters_snmpauthentications', 'community_write')) {
-      include(PLUGIN_PRINTERCOUNTERS_DIR. "/install/update_103_104.php");
-      update103to104();
-   }
-
-   // Update 104 to 105
-   if (!$DB->tableExists('glpi_plugin_printercounters_additionals_datas')) {
-      include(PLUGIN_PRINTERCOUNTERS_DIR. "/install/update_104_105.php");
-      update104to105();
-   }
-
-   // Update 105 to 106
-   if (!$DB->fieldExists('glpi_plugin_printercounters_snmpauthentications', 'is_default')) {
-      include(PLUGIN_PRINTERCOUNTERS_DIR. "/install/update_105_106.php");
-      update105to106();
-   }
-
-   // Update 106 to 107
-   if (!$DB->tableExists("glpi_plugin_printercounters_errorrecords")) {
-      include(PLUGIN_PRINTERCOUNTERS_DIR. "/install/update_106_107.php");
-      update106to107();
-   }
-
-    if (!$DB->fieldExists("glpi_plugin_printercounters_configs", 'can_kill_processes')) {
-        $DB->runFile(PLUGIN_PRINTERCOUNTERS_DIR. "/install/sql/update-2.0.2.sql");
-    }
-
-   CronTask::Register('PluginPrintercountersItem_Ticket', 'PrintercountersCreateTicket', DAY_TIMESTAMP);
-   CronTask::Register('PluginPrintercountersErrorItem', 'PluginPrintercountersErrorItem', DAY_TIMESTAMP);
-
-   PluginPrintercountersProfile::createFirstAccess($_SESSION['glpiactiveprofile']['id']);
-   PluginPrintercountersProfile::initProfile();
-   $DB->query("DROP TABLE IF EXISTS `glpi_plugin_printercounters_profiles`;");
-
+   $migration = new Migration(100);
+   $migration->executeMigration();
    return true;
 }
 
