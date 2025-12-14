@@ -233,10 +233,10 @@ class PluginPrintercountersNotificationTargetAdditional_Data extends Notificatio
       $notif = new Notification();
 
       foreach ([self::TONER_ALERT] as $event) {
-         $options = ['itemtype' => 'PluginPrintercountersAdditional_Data',
-                          'event'    => $event,
-                          'FIELDS'   => 'id'];
-         foreach ($DB->request('glpi_notifications', $options) as $data) {
+         foreach ($DB->request(['SELECT' => ['id'],
+                               'FROM' => 'glpi_notifications',
+                               'WHERE' => ['itemtype' => 'PluginPrintercountersAdditional_Data',
+                                           'event' => $event]]) as $data) {
             $notif->delete($data);
          }
       }
@@ -245,16 +245,18 @@ class PluginPrintercountersNotificationTargetAdditional_Data extends Notificatio
       $template       = new NotificationTemplate();
       $translation    = new NotificationTemplateTranslation();
       $notif_template = new Notification_NotificationTemplate();
-      $options     = ['itemtype' => 'PluginPrintercountersAdditional_Data',
-                           'FIELDS'   => 'id'];
-      foreach ($DB->request('glpi_notificationtemplates', $options) as $data) {
-         $options_template = ['notificationtemplates_id' => $data['id'],
-                                   'FIELDS'                   => 'id'];
-         foreach ($DB->request('glpi_notificationtemplatetranslations', $options_template) as $data_template) {
+      foreach ($DB->request(['SELECT' => ['id'],
+                            'FROM' => 'glpi_notificationtemplates',
+                            'WHERE' => ['itemtype' => 'PluginPrintercountersAdditional_Data']]) as $data) {
+         foreach ($DB->request(['SELECT' => ['id'],
+                               'FROM' => 'glpi_notificationtemplatetranslations',
+                               'WHERE' => ['notificationtemplates_id' => $data['id']]]) as $data_template) {
             $translation->delete($data_template);
          }
          $template->delete($data);
-         foreach ($DB->request('glpi_notifications_notificationtemplates', $options_template) as $data_template) {
+         foreach ($DB->request(['SELECT' => ['id'],
+                               'FROM' => 'glpi_notifications_notificationtemplates',
+                               'WHERE' => ['notificationtemplates_id' => $data['id']]]) as $data_template) {
             $notif_template->delete($data_template);
          }
       }
@@ -265,8 +267,9 @@ class PluginPrintercountersNotificationTargetAdditional_Data extends Notificatio
     *
     * @param $usertype
     * @param $redirect
+    * @param $anchor
    **/
-   function formatURL($type, $redirect) {
+   function formatURL($usertype, $redirect, ?string $anchor = null) {
       global $CFG_GLPI;
 
       return urldecode($CFG_GLPI["url_base"]."/index.php?redirect=$redirect");

@@ -32,14 +32,7 @@ function plugin_printercounters_install() {
 
    include_once (PLUGIN_PRINTERCOUNTERS_DIR. "/inc/profile.class.php");
 
-   // SQL creation
-   if (!$DB->tableExists("glpi_plugin_printercounters_records")) {
-      $DB->runFile(PLUGIN_PRINTERCOUNTERS_DIR. "/install/sql/empty-2.0.2.sql");
-
-      // Add record notification
-      include_once(PLUGIN_PRINTERCOUNTERS_DIR. "/inc/notificationtargetadditional_data.class.php");
-      call_user_func(["PluginPrintercountersNotificationTargetAdditional_Data",'install']);
-   }
+   // All schema changes are now handled by migration files in sql/
 
    // Update 100 to 101
    if ($DB->tableExists("glpi_plugin_printercounters_billingmodels")

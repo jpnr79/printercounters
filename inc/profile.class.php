@@ -288,13 +288,14 @@ class PluginPrintercountersProfile extends Profile {
    static function changeProfile() {
       global $DB;
 
-      foreach ($DB->request("SELECT *
-                           FROM `glpi_profilerights` 
-                           WHERE `profiles_id`='".$_SESSION['glpiactiveprofile']['id']."' 
-                              AND `name` LIKE '%plugin_printercounters%'") as $prof) {
-         $_SESSION['glpiactiveprofile'][$prof['name']] = $prof['rights'];
+      if (isset($_SESSION['glpiactiveprofile'])) {
+         foreach ($DB->request(['SELECT' => '*',
+                                'FROM' => 'glpi_profilerights',
+                                'WHERE' => ['profiles_id' => $_SESSION['glpiactiveprofile']['id'],
+                                            'name' => ['LIKE', '%plugin_printercounters%']]]) as $prof) {
+            $_SESSION['glpiactiveprofile'][$prof['name']] = $prof['rights'];
+         }
       }
-
    }
 
    static function createFirstAccess($profiles_id) {

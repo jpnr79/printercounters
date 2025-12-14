@@ -107,14 +107,24 @@ class PluginPrintercountersAdditional_data extends CommonDBTM {
          $types = [PluginPrintercountersPrinter::TONER_TYPE, PluginPrintercountersPrinter::DRUM_TYPE];
 
          // if you change this query, please don't forget to also change in showDebug()
-         $query_alert = "SELECT `glpi_plugin_printercounters_additionals_datas`.`id` as additional_datas_id,
-                                `glpi_alerts`.`id` as alerts_id,
-                                `glpi_alerts`.`date` as alerts_date
-                        FROM `glpi_plugin_printercounters_additionals_datas`
-                        LEFT JOIN `glpi_alerts`
-                           ON (`glpi_plugin_printercounters_additionals_datas`.`id` = `glpi_alerts`.`items_id`
-                               AND `glpi_alerts`.`itemtype` = 'PluginPrintercountersAdditional_Data')
-                        WHERE `glpi_plugin_printercounters_additionals_datas`.`type` IN ('".implode("','", $types)."');";
+         $query_alert = [
+            'SELECT' => [
+               'additional_datas_id' => 'glpi_plugin_printercounters_additionals_datas.id',
+               'alerts_id' => 'glpi_alerts.id',
+               'alerts_date' => 'glpi_alerts.date'
+            ],
+            'FROM' => 'glpi_plugin_printercounters_additionals_datas',
+            'LEFT JOIN' => [
+               'glpi_alerts' => [
+                  'ON' => [
+                     'glpi_plugin_printercounters_additionals_datas' => 'id',
+                     'glpi_alerts' => 'items_id',
+                     ['AND' => ['glpi_alerts.itemtype' => 'PluginPrintercountersAdditional_Data']]
+                  ]
+               ]
+            ],
+            'WHERE' => ['glpi_plugin_printercounters_additionals_datas.type' => $types]
+         ];
 
          $items   = [];
 
