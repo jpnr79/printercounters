@@ -32,8 +32,8 @@ define('PLUGIN_PRINTERCOUNTERS_VERSION', '2.0.2');
 if (!defined("PLUGIN_PRINTERCOUNTERS_DIR")) {
    define("PLUGIN_PRINTERCOUNTERS_DIR", Plugin::getPhpDir("printercounters"));
    define("PLUGIN_PRINTERCOUNTERS_NOTFULL_DIR", Plugin::getPhpDir("printercounters",false));
-   define("PLUGIN_PRINTERCOUNTERS_WEBDIR", Plugin::getWebDir("printercounters"));
-   define("PLUGIN_PRINTERCOUNTERS_NOTFULL_WEBDIR", Plugin::getWebDir("printercounters",false));
+   define("PLUGIN_PRINTERCOUNTERS_WEBDIR", "/plugins/printercounters/");
+   define("PLUGIN_PRINTERCOUNTERS_NOTFULL_WEBDIR", "/plugins/printercounters/");
 }
 
 // Init the hooks of the plugins -Needed
